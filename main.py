@@ -28,7 +28,7 @@ class Grid:
             raise ValueError("Invalid Piece")
         for row in range (self._rows-1, -1, -1):
             if self._grid[row][column] == GridPosition.EMPTY:
-                self._grid[row][column] == piece
+                self._grid[row][column] = piece
                 return row
             
     def checkWin(self, connectN, row, col, piece):
